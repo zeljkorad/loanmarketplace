@@ -1,0 +1,32 @@
+<form [formGroup]="profileForm" (ngSubmit)="submitForm(profileForm)">
+   <div class="form-row text-center">
+      <p>First Name</p>
+      <input type="text" formControlName="firstname">
+      <p *ngIf="profileForm.get('firstname').invalid&&profileForm.get('lastname').touched" class="alert-error"><em>First name is required</em></p>
+
+      <p>Last Name</p>
+      <input type="text" formControlName="lastname">
+      <p *ngIf="profileForm.get('lastname').invalid&&profileForm.get('lastname').touched" class="alert-error"><em>Last name is required</em></p>
+
+      <p>Your Email</p>
+      <input type="email" formControlName="profileemail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      <p *ngIf="profileForm.get('profileemail').invalid&&profileForm.get('profileemail').touched" class="alert-error"><em>Please enter a valid email address</em></p>
+
+      <p>Phone Number</p>
+      <input type="number">
+
+      <p>Password</p>
+      <input type="password" formControlName="password">
+      <p *ngIf="profileForm.get('password').invalid&&profileForm.get('password').touched" class="alert-error"><em>Password is required</em></p>
+
+      <p>Confirm Password</p>
+      <input type="password" formControlName="confirm_password">
+      <p *ngIf="profileForm.get('confirm_password').invalid&&profileForm.get('confirm_password').touched" class="alert-error"><em>Please confirm your password</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <button type="submit" class="form-btn" [disabled]="!profileForm.valid">Save Changes</button>
+   </div>
+   <!-- .form-row -->
+ </form>

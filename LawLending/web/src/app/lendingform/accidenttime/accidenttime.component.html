@@ -1,0 +1,18 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>What was the date<br> of your accident?</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <input type="date" placeholder="i.e. 02/12/2017" formControlName="accidenttime">
+      <p *ngIf="modalForm.get('accidenttime').invalid&&modalForm.get('accidenttime').touched" class="alert-error"><em>The approximate date is required</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->
+</form>

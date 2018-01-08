@@ -1,0 +1,199 @@
+/*** Common Elements ***/
+@font-face {
+    font-family: 'Publico';
+    src: url('../fonts/publicoheadlineweb-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/publicoheadlineweb-medium.woff') format('woff'), url('../fonts/publicoheadlineweb-medium.ttf') format('truetype'), url('../fonts/publicoheadlineweb-medium.svg#svgFontName') format('svg');
+}
+body {
+    font-family: 'Arimo'!important;
+    a {
+        color: #cb9859!important;
+    }
+}
+.btn {
+    color: #FFF!important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 0!important;
+    padding: 10px 30px!important;
+    transition: background 0.25s ease-out 0s;
+}
+.btn:hover {
+    background-color: #CCC;
+    color: #000!important;
+}
+.btn-yellow {
+    background-color: #cb9859;
+}
+.btn-blue {
+    background-color: #272f54;
+}
+
+/*** Header ***/
+.main-header {
+    overflow: hidden;
+    border-bottom: 2px solid #cb9859;
+    z-index: 999;
+    position: relative;
+    padding: 20px 0;
+    .navbar {
+        margin-bottom: 0!important;
+        a {
+            color: #FFF!important;
+            font-weight: bold;
+            padding: 16px!important;
+        }
+        a:hover,
+        li.active a {
+            background: transparent!important;
+            color: #cb9859!important;
+        }
+    }
+    .navbar-toggle {
+        margin-right: 0!important;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+}
+
+/*** mobileMenu ***/
+#mobileMenu {
+    display: none!important;
+}
+
+/*** Slideshow ***/
+#slideshow {
+    background-image: url(../images/slideshow-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -97px;
+    height: 100vh;
+    color: #FFF;
+    .container {
+        padding: 200px 0;
+    }
+    h1 {
+        font-size: 65px;
+        font-family: 'Publico';
+        margin: 0;
+    }
+    p {
+        margin: 20px 0;
+        font-size: 21px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #cb9859;
+    }
+    p.gray {
+        color: #CCC;
+        letter-spacing: 0;
+    }
+}
+
+/*** Pop-up Items ***/
+.main-section {
+    background-color: #DDD;
+    .container {
+        padding: 10px 0;
+        .row-top {
+           margin-top: -100px;
+        }
+    }
+}
+a.panel-a {
+    display: block;
+    background-color: #272f54;
+    color: #FFF !important;
+    border-bottom: 7px solid #cb9859;
+    padding: 30px 20px 80px;
+    margin: 15px 0;
+    transition: background 0.25s ease-out 0s;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    cursor: pointer;
+    h1 {
+        font-family: 'Publico';
+        margin-top: 0;
+  }
+}
+a.panel-a:hover {
+    color: #272f54!important;
+    background-color: #cb9859;
+    text-decoration: none;
+    border-bottom: 7px solid #272f54;
+}
+.a1 {
+    background-image: url(../images/icons/01.png);
+}
+.a2 {
+    background-image: url(../images/icons/02.png);
+}
+.a3 {
+    background-image: url(../images/icons/03.png);
+}
+.a4 {
+    background-image: url(../images/icons/04.png);
+}
+.a5 {
+    background-image: url(../images/icons/05.png);
+}
+.a6 {
+    background-image: url(../images/icons/06.png);
+}
+.a7 {
+    background-image: url(../images/icons/07.png);
+}
+.a8 {
+    background-image: url(../images/icons/08.png);
+}
+.a9 {
+    background-image: url(../images/icons/09.png);
+}
+
+/*** How It Works ***/
+.how-it-works {
+    color: #272f54;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    header {
+        padding: 25px 0;
+    }
+    h1, h3 {
+        font-family: 'Publico';
+        margin: 0 0 10px;
+    }
+    p {
+        color: #000;
+    }
+    .info {
+        background-repeat: no-repeat;
+        padding-left: 95px;
+        padding-bottom: 20px;
+    }
+    .first-bg {
+        background-image: url(../images/icons/form-1.png);
+    }
+    .second-bg {
+        background-image: url(../images/icons/form-2.png);
+    }
+    .third-bg {
+        background-image: url(../images/icons/form-3.png);
+    }
+}
+
+/*** Footer ***/
+.copyright {
+    background-color: #182e42;
+    color: #CCC;
+    padding: 35px 0;
+    border-top: 10px solid #cb9859;
+    p {
+        margin: 0;
+    }
+    p a {
+        margin: 0 5px;
+    }
+    p:last-child {
+        margin-top: 10px;
+    }
+}

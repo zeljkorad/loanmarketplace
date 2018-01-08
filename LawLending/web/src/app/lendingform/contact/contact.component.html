@@ -1,0 +1,23 @@
+   <div class="form-row">
+      <h2>Do you want us to contact you ASAP?</h2>
+      <div class="col-lg-12 contact-outer">
+         <div class="col-md-6">
+            <input class="toggle" type="radio" value="yes" checked [(ngModel)]="contactYes"><label class="toggle-btn">Yes</label>
+
+            {{contactYes}}
+         </div>
+         <!-- .col-md-6 -->
+         <div class="col-md-6">
+            <input class="toggle" type="radio" value="no"><label class="toggle-btn">No</label>
+         </div>
+         <!-- .col-md-6 -->
+      </div>
+      <!-- .col-lg-12 -->
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" (click)="goNext()" class="form-btn" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->

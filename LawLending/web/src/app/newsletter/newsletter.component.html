@@ -1,0 +1,8 @@
+<div class="newsletter">
+   <form [formGroup]="newsletterForm">
+      <h4>Subcribe to our newsletter</h4>
+      <input type="email" placeholder="Enter email" formControlName="newsletteremail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      <p *ngIf="newsletterForm.get('newsletteremail').invalid&&newsletterForm.get('newsletteremail').touched"><em>Please enter a valid email address</em></p>
+   </form>
+</div>
+<!-- .newsletter -->

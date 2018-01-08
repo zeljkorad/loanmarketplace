@@ -1,0 +1,33 @@
+<div id="slideshow" class="page-view">
+   <div class="container container-page">
+      <h1>{{title}}</h1>
+   </div>
+   <!-- .container -->
+</div>
+<!-- #slideshow -->
+
+<div id="lr-view" class="main-section">
+   <div class="container">
+     <div class="row">
+        <div class="col-md-4" *ngFor="let item of collection | paginate: { itemsPerPage: 9, currentPage: p }">
+           <a class="panel-a a1">
+              <div class="panel-inner">
+                 <h1>{{ item }}</h1>
+                 <h4><strong>Attorney:</strong> John Bike</h4>
+                 <h5><strong>Amount:</strong> $24,000.00</h5>
+                 <h6><strong>Category:</strong> Auto Accident</h6>
+                 <h6><strong>State:</strong> New York</h6>
+              </div>
+              <!-- .panel-inner -->
+           </a>
+           <!-- .panel-a -->
+        </div>
+        <!-- .col-md-4 -->
+     </div>
+     <!-- .row -->
+
+     <pagination-controls (pageChange)="p = $event" class="paginate text-center"></pagination-controls>
+   </div>
+   <!-- .container -->
+</div>
+<!-- .main-section -->

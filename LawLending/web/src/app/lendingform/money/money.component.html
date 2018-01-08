@@ -1,0 +1,19 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>How much money do you need?</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <p><input type="number" placeholder="i.e. 50,000.00" formControlName="money"></p>
+      <p *ngIf="modalForm.get('money').invalid&&modalForm.get('money').touched" class="alert-error"><em>Please enter the desired amount</em></p>
+      <p>Default currency: USD</p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->
+ </form>

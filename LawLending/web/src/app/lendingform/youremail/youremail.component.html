@@ -1,0 +1,18 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>Your Email Address</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <input type="email" placeholder="i.e. info@lawlending.com" formControlName="youremail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      <p *ngIf="modalForm.get('youremail').invalid&&modalForm.get('youremail').touched" class="alert-error"><em>Please enter a valid email address</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->
+</form>

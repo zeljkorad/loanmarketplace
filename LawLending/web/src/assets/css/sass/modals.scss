@@ -1,0 +1,28 @@
+/*** Modals ***/
+.modal-content {
+    border-radius: 0!important;
+}
+.modal-body {
+    padding: 0!important;
+    header {
+        background-color: #EEE;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 23px;
+        color: #575757;
+        margin: 30px 0;
+    }
+    p {
+        font-size: 12px;
+        color: #575757;
+        margin: 10px 0;
+    }
+    input {
+        width: 80%;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #DDD;
+    }
+}

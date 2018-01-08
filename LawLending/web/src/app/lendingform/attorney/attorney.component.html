@@ -1,0 +1,23 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>Attorney's First and Last Name</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <p>First Name</p>
+      <input type="text" formControlName="firstname">
+      <p *ngIf="modalForm.get('firstname').invalid&&modalForm.get('firstname').touched" class="alert-error"><em>First name is required</em></p>
+
+      <p>Last Name</p>
+      <input type="text" formControlName="lastname">
+      <p *ngIf="modalForm.get('lastname').invalid&&modalForm.get('lastname').touched" class="alert-error"><em>Last name is required</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->
+</form>

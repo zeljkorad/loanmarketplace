@@ -1,0 +1,25 @@
+/*** Mobile version ***/
+@media (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+    #slideshow {
+        padding: 0 20px;
+    }
+    #slideshow .container {
+        padding: 140px 0 70px;
+    }
+    #slideshow h1 {
+        font-size: 45px;
+    }
+    .row {
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+    .info {
+        margin: 20px 0;
+    }
+    .news-list {
+        padding: 0 30px;
+    }
+}

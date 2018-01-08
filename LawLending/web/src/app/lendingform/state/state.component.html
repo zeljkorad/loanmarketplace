@@ -1,0 +1,17 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>What state is your case in?</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+     <input type="text" placeholder="State" formControlName="state" #ref>
+     <p *ngIf="modalForm.get('state').invalid&&modalForm.get('state').touched" class="alert-error"><em>State is required</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="submit" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button>
+   </div>
+   <!-- .form-row -->
+ </form>

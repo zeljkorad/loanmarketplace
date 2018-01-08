@@ -1,0 +1,26 @@
+<form [formGroup]="loginForm" (ngSubmit)="submitForm(loginForm)">
+   <div class="form-row">
+      <h2>Login</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <p>Your email address</p>
+      <input type="email" formControlName="loginemail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+      <p *ngIf="loginForm.get('loginemail').invalid&&loginForm.get('loginemail').touched" class="alert-error"><em>Please enter a valid email address</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <p>Your password</p>
+      <input type="password" formControlName="loginpassword">
+      <p *ngIf="loginForm.get('loginpassword').invalid&&loginForm.get('loginpassword').touched" class="alert-error"><em>Password field cannot be empty</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="submit" class="form-btn" [disabled]="!loginForm.valid">Login</button><br>
+      <a data-dismiss="modal" data-toggle="modal" href="#fpform">Forgot Password?</a>
+   </div>
+   <!-- .form-row -->
+</form>

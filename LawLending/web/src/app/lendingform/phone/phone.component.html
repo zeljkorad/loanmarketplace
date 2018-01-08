@@ -1,0 +1,19 @@
+<form [formGroup]="modalForm" (ngSubmit)="submitForm(modalForm)">
+   <div class="form-row">
+      <h2>What is your phone number?</h2>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row text-center">
+      <input type="number" placeholder="i.e. 312 508 5500" formControlName="phone">
+      <p>We will give you a call as soon as possible!</p>
+      <p *ngIf="modalForm.get('phone').invalid&&modalForm.get('phone').touched" class="alert-error"><em>Your phone is required</em></p>
+   </div>
+   <!-- .form-row -->
+
+   <div class="form-row">
+      <button type="button" class="form-btn" [disabled]="!modalForm.valid" nextStep>Next <i class="next-icon fa fa-chevron-right" aria-hidden="true"></i></button><br>
+      <a class="previous-btn" previousStep>Previous</a>
+   </div>
+   <!-- .form-row -->
+</form>
