@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> 
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <!--<img  src="../img/logo.png" class="img-responsive" />-->
+                        <img  src="../img/logo-lender-match.png" class="img-responsive" />
+                    </a>
+                    <!--<span class="pull-left logo-title">
+                        LenderMatch
+                    </span>-->
+                </div>
+                <div class="collapse navbar-collapse">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> EN <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                        </ul>
+                    </li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Lender</a></li>
+                        <li><a href="#borrower">Borrower</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#requests">Requests</a></li>
+                        <li><a href="#login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="details-investor-bg-image">
+        </div>
+
+        <div class="container details-investor-page-1"> 
+    
+                <div class="row">
+                    <div class="col-md-12 h-title pull-left">
+                        <h1> Investor details </h1>
+                    </div>
+                </div>
+            
+            
+                <div class="row">
+                    <div class="col-md-12 h-type pull-left">
+                        <span> Lender type </span>
+                    </div>
+                </div>
+            
+            <!--<div class="container">-->
+
+            <div class="container lender-type">
+                <div class="row">
+                    <div class="col-md-2" id="lender-icon">
+                        <img src="../img/lender-type-icon.png"/>
+                    </div>
+                    <div class="col-md-4" id="text">
+                        <div class="lender-text">
+                            <span> Individual lender </span>
+                        </div>
+                    </div>
+                    <div id="company">
+                        <div class="col-md-1"  id="company-icon">
+                        <img src="../img/company-type-icon.png"/>
+                        </div>
+                        <div class="col-md-5" id="text">
+                            <div class="company-text">
+                                <span> Company or organisation </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="row pull-left">
+                <div class="col-md-8 desc">
+                    <p> We need the details below so that you can access your 
+                        account and so that we can contact you.
+                    </p>
+                </div>
+            </div>
+         
+            <div class="container investor" id="details-investor">
+                <div class="row">
+                    <div class="col-md-2" id="text">
+                        <span> Title </span> 
+                    </div>
+                    <div class="col-md-3" id="text">
+                        <span> First name </span>
+                    </div>
+                    <div class="col-md-3" id="text">
+                        <span> Last name </span>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-2">
+                        <select class="form-control select">
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                        </select>
+                    </div>                   
+                    <div class="col-md-3" >
+                          <input type="text" class="textbox" placeholder="Daniel"></input>
+                    </div>
+                    <div class="col-md-3" >
+                          <input type="text" class="textbox" placeholder="Peshevski"></input>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="divider"> <hr> </div>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-md-12 pull-left" id="text">
+                        <span> Date of birth </span>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-control select">
+                            <option>DD</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-control select">
+                            <option>MM</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-control select select-small">
+                            <option>YYYY</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 date-birth">
+                    </div>
+                    <div class="col-md-2 month-birth">
+                    </div>
+                    <div class="col-md-3 year-birth">
+                    </div>
+                </div>
+    
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="divider"> <hr> </div>
+                </div>
+            </div>
+                <div class="row pull-left">
+                    <div class="col-md-12 col-xs-12">
+                        <button type="submit" class="btn-continue"> CONTINUE </button>
+                    </div>
+                </div>
+            
+        </div>
+
+        <footer class="text-center">
+            <p>&copy;2017, LenderMatch, All right reserved. Terms of Use. Privacy Policy </p>
+        </footer>
+    </body>
+</html>

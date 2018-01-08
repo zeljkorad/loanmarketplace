@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <!--<img  src="../img/logo.png" class="img-responsive" />-->
+                      <img  src="../img/logo-lender-match.png" class="img-responsive" />
+                </a>
+                <!--<span class="pull-left logo-title">
+                    LenderMatch
+                </span>-->
+            </div>
+            <div class="collapse navbar-collapse">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> EN <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                    </ul>
+                </li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Lender</a></li>
+                    <li><a href="#borrower">Borrower</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#requests">Requests</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="slider">
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span> BORROWING OPPORTUNITIES READY TO SIGN </span>
+                    </div>
+                    <div class="col-md-6">
+                        <h3> Bluiding a brighter financial future. </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="submit" class="btn-invest"> invest or get money </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center jumbo-maps">  
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbo" id="jumBusiness">
+                    <div class="jumbo-text">
+                        <h3> Lenders opportunities for amazing earning </h3>
+                        <span> Make great return on investement by offering loans to out database of borrowers. </span>
+                    </div>
+                     <div class="jumbo-apply">
+                         <!-- Button trigger modal -->
+                            sign up to start lending
+                        <button data-toggle="modal" class="modal-btn" data-target="#modalSignUp">
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"> 
+                <div class="jumbo" id="jumBusiness2">
+                    <div class="jumbo-text">
+                        <h3> Business & personal laons click away </h3>
+                        <span> Whether you need small businees loan, student or mortgage loan, we've got you covered. </span>
+                    </div>
+                    <div class="jumbo-apply">
+                        applly to borrow money
+                        <button type="button" data-toggle="modal" class="modal-btn" data-target="#modalLogin">
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--lenderBorrower-->
+    <div class="container-fluid flow-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 flow-title">
+                    <h2> Ultimate Meeting Point for Lenders and Borrowers </h2>
+                    <span> Experience the convenience of loan through LenderMatch </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="circle-bg pull-left">
+                        <img src="../img/lender-icon.png" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-9">
+                    <div class="hr-title">
+                        LENDER
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="logo text-center center-block">
+                        <img src="../img/logo-flow.png">
+                        <p> LenderMatch</p> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-9">
+                    <div class="hr-title text-right">
+                        borrower
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="circle-bg pull-right">
+                        <img src="../img/borrower.png" /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="statistic ">
+                            <div class="bordered">
+                                <h1 data-toggle="count-to" data-to="10000000000000" data-from="0" >1,125</h1>
+                                <div class="test pull-left">
+                                    <h2>Loan requests</h2>
+                                    <span>Anticipating offers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="statistic">
+                    <h4 data-toggle="count-to" data-to="$10000000000000" data-from="0">$532,050</h4>
+                    <div class="test  pull-left">
+                        <h2>Executed loans</h2>
+                        <span>Via LenderMatch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <span> &copy;2017, LenderMatch. All right reserved. Terms of Use. Privacy Policy 
+        </span>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" data-backdrop="true" id="modalLogin" aria-labelledby="modalLogin">
+        <div class="modal-dialog-login" role="document">
+            <!--<div class="modal-content">-->
+                <!--<div class="modal-body">-->
+                    <div class="container">
+                        <div class="log-in-popup center-block">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="h-title">
+                                        <h1> Log in LenderMatch </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-facebook"> log in with facebook </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-google"> log in with google </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="divider"> <hr> </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="text-or">
+                                        <span> or </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="divider"> <hr> </div>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="txtEmail">
+                                        <input type="text" id="txt-email-pass" class="textbox" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="txtEmail">
+                                        <input type="text" id="txt-email-pass" class="textbox" placeholder="Password"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="remember-me">
+                                        <input type="checkbox" check="false"> Remember me
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-log-in"> log in </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="divider"> <hr> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-sign-up-lender"> SIGN UP TO START LENDING </button> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-apply-borrow"> APPLY TO BORROW MONEY </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="forgot-pass">
+                                        <p> Forgot password <p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--</div>
+            </div>-->
+        </div>
+    </div>
+
+    <!--Sign up Modal -->
+
+     <div class="modal fade" id="modalSignUp" data-backdrop="true" aria-labelledby="modalSighUp">
+        <div class="modal-dialog-signup">
+            <div class="container">
+                <div class="center-block sign-up-popup">
+                    <div class="sign-up-bg-left" img="responsive">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="h-title">
+                                        <h2> Sign up to start leanding </h2> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="txtEmail">
+                                        <input type="text" id="txt-email-pass" class="textbox" placeholder="Email Address"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="txtEmail">
+                                        <input type="text" id="txt-email-pass" class="textbox" placeholder="Password"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn-sign-up"> SIGN UP </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="txtQuestion">
+                                        <p> Already have an account? </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-up-bg-right" img="responsive">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../img/icon-1.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="descriotion-sing-up">
+                                        <span> You can earn a current estimated return of 8%* per year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../img/icon-2.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="descriotion-sing-up">
+                                        <span> More than 1000+ different load requests ready to sign </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1">
+                                    <div class="icon">
+                                        <img src="../img/icon-3.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="descriotion-sing-up">
+                                        <span> Options to access your money early if needed </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
